@@ -1,0 +1,49 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 1s ease;
+}
+
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.weather-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.sunny-bg {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+}
+
+.rainy-bg {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+.mic-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mic-icon {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.mic-listening {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
